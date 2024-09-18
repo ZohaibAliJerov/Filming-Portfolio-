@@ -27,11 +27,11 @@
     </div>
     <div class="flex flex-col justify-between py-6">
       <div>
-        <h1 class="text-[24px] md:text-[36px]">Introduction</h1>
+        <h1 class="text-[24px] md:text-[36px] font-causten font-semibold">Introduction</h1>
         <div class="py-2">
             <img src="../assets/rectangle2.png" alt="">
         </div>
-        <p class="leading-[28px] md:leading-[32px] text-[16px] md:text-[20px]">
+        <p class="leading-[28px] md:leading-[32px] text-[16px] md:text-[20px] font-gotham">
           A Graduate in Theatre, Film & TV with over ﬁve years at FILMBUG
           PRODUCTIONS as Creative Media Head. My journey in the Film landscape
           is marked by a relentless pursuit of creative excellence and
@@ -42,7 +42,7 @@
         </p>
       </div>
       <div>
-        <h1 class="text-[24px] md:text-[36px]">Awards</h1>
+        <h1 class="text-[24px] md:text-[36px] font-causten font-semibold">Awards</h1>
         <div class="py-2">
             <img src="../assets/rectangle2.png" alt="">
         </div>
@@ -57,7 +57,7 @@
 
   <div>
     <div class="flex justify-center">
-      <h1 class="text-[48px]">Team Members</h1>
+      <h1 class="text-[48px] font-causten font-semibold">Team Members</h1>
     </div>
     <div class="flex justify-center">
         <img src="../assets/rectangle2.png" alt="">
@@ -66,8 +66,8 @@
       {#each userData as { imgSrc, heading, para }}
         <div class="text-center py-2 flex flex-col items-center">
           <img src={imgSrc} alt={heading} class="object-cover w-full" />
-          <h2 class="text-[24px] py-2 text-[#141313]">{heading}</h2>
-          <p class="py-2 text-[#141313] text-[15px] font-semibold">{para}</p>
+          <h2 class="text-[22px] pt-4 text-[#141313] font-causten font-semibold">{heading}</h2>
+          <p class="py-1 text-[#141313] text-[15px] font-causten">{para}</p>
         </div>
       {/each}
     </div>
