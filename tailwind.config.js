@@ -5,9 +5,8 @@ export default {
     extend: {
     },
     fontFamily: {
-      pristina: ['Pristina', 'cursive'],
-      perpetua: ['Perpetua', 'serif'],
-      merriweather: ['Merriweather', 'serif'],
+      causten: ['Causten', 'sans-serif'],
+      gotham: ['Gotham', 'sans-serif']
     },
   },
   plugins: [

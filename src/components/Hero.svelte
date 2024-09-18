@@ -1,32 +1,31 @@
 <script>
-  import Button from "./CustomButton.svelte";
   import SectionWrapper from "./SectionWrapper.svelte";
+
+  export let backgroundImage;
 </script>
 
 <SectionWrapper id="hero">
   <div
-    class=" h-[calc(100vh-150px)] md:h-screen bg-cover bg-center flex flex-col items-center justify-center"
-    style="background-image: url('../assets/aaaa.png');"
+    class="h-[calc(100vh-150px)] md:h-screen bg-cover bg-center flex flex-col"
+    style="background-image: url('{backgroundImage}');"
   >
-    <h2
-      class="max-w-[1200px] mx-auto w-full font-semibold flex flex-col justify-center items-center pt-10"
-    >
-      <span
-        class="text-[#F30067] font-perpetua text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-normal"
-        >ARSALAN HAIDER</span
-      >
-      <span
-        class="text-[#F30067] pt-4 font-pristina text-5xl sm:text-7xl md:text-8xl lg:text-8xl font-normal"
-        >Photography and Films</span
-      >
-    </h2>
-    <div class="pt-10">
-      <Button
-        text="Order Services"
-        bg_color="bg-[#F30067]"
-        text_color="text-[white]"
-        width="w-[199px]"
-      />
+    <div class="h-[90%] relative w-[90%] mx-auto">
+      <div class="absolute bottom-0 left-0 font-causten text-center">
+        <h2
+          class="text-[20px] md:text-[50px] font-[700] text-[#F26422] font-Causten"
+        >
+          ARSALAN HAIDER
+        </h2>
+        <h2
+          class="text-[20px] md:text-[40px] font-[600] text-[#989898] font-Causten"
+        >
+          FILMMAKER
+        </h2>
+        <img src="../assets/line1.png" alt="" />
+        <p class="text-[15px] md:text-[28px] text-[#989898] pt-2 font-Causten">
+          CINEMATOGRAPHER | PHOTOGRAPHER | EDITOR
+        </p>
+      </div>
     </div>
   </div>
 </SectionWrapper>

@@ -5,6 +5,7 @@
   export let bg_color;
   export let text_color;
   export let width = "w-auto";
+
   export let onClick = () => {};
 
   function handleClick() {
@@ -13,8 +14,8 @@
 </script>
 
 <button
-  class={`${bg_color} ${text_color} ${width} border-[1px] border-[#F30067] text-[#F30067] font-semibold py-2 px-4 rounded-full`}
+  class={`${bg_color} ${text_color} ${width} button border-[1px] border-[#F26422] py-2 px-4 rounded-full hover:font-bold`}
   on:click={handleClick}
 >
-  {text}
+  <span class="text" data-text={text}>{text}</span>
 </button>
