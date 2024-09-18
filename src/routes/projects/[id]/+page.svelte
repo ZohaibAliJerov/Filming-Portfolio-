@@ -22,7 +22,7 @@
 {#if image}
   <div class="py-20 max-w-[1400px] mx-auto">
     <div class="w-[90%] mx-auto">
-        <div class=" text-center">
+        <div class=" text-center pt-10">
             <h2 class="text-[40px] font-semibold">{image.title}</h2>
           </div>
           <div class="flex justify-center">
